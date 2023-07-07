@@ -1,4 +1,14 @@
 body{
   padding: 50px;
-  background-color: rgb(57, 199, 199);
+  padding-bottom: 500px;
+  background-color: rgb(225, 225, 228);
+}
+
+h1 {
+  color: #323;
+}
+
+p {
+  background-color: rgb(202, 202, 187);
+  color: rgb(47, 6, 16)
 }

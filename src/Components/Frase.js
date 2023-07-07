@@ -1,9 +1,11 @@
+import styles from './Frase.module.css'
+
 function Frase(){
 
     return(
-        <div>
-            <h1>Essa é uma frase completa.</h1>
-        </div>
+        <div className={styles.fraseContainer}>
+            <p className={styles.fraseContent}>Essa é uma frase completa.</p>
+        </div> 
     )
 }
 export default Frase
