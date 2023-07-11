@@ -1,4 +1,5 @@
 import { useState} from 'react'
+import styles from './Frase.module.css'
 
 function Form(){
 
@@ -13,7 +14,7 @@ function Form(){
     return(
         <>
         <h1>Meu Cadastro:</h1>
-            <form onSubmit = {cadastrarUsuario}>
+            <form onSubmit = {cadastrarUsuario} className = {styles.cadastro}>
                 <div>
                     <label htmlFor="name">Nome: </label>
                     <input 

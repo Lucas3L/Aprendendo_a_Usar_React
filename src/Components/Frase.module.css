@@ -1,11 +1,25 @@
 
 .fraseContainer {
     background-color: rgb(37, 37, 164);
-    border: 15 px solid #111;
+    border: 15px solid #111;
+    color: #FFF;
 }
 
 .fraseContent {
     color: #FFF;
     background-color: #333;
     margin: 5 px ;
+}
+.cadastro{
+    color: black;
+    background-color: #FFF;
+    border: 15px solid #656161;
+    padding: 10px;
+}
+
+.Emergencia{
+    color: #af0101;
+    background-color: #dca827;
+    padding: 10px;
+    font-size: 50px;
 }

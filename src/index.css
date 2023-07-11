@@ -12,3 +12,9 @@ p {
   background-color: rgb(202, 202, 187);
   color: rgb(47, 6, 16)
 }
+
+h3 {
+  color: rgb(19, 24, 177);
+  margin: 20px #FFF;
+  font-size: 35px;
+}
