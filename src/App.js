@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import HelloWorld from './Components/HelloWorld'
 import SayMyName from './Components/SayMyName'
 import Pessoa from './Components/Pessoa'
@@ -10,8 +10,13 @@ import Condicional from './Components/Condicional'
 import OutraLista from './Components/OutraLista'
 import SeuNome from './Components/SeuNome'
 import {useState} from 'react'
-import Saudacao from './Components/Saudacao';
-
+import Saudacao from './Components/Saudacao'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Home from './Pages/Home'
+import Contato from './Pages/Contato'
+import Empresa from './Pages/Empresa'
+import NavBar from './Components/layout/NavBar'
+import Footer from './Components/layout/Footer'
 function App() {
 
   const meusItens = ['React', 'Vue', 'Angular']
@@ -33,6 +38,21 @@ function App() {
       <h1>State Lift</h1>
       <SeuNome setNome = {setNome}/>
       <Saudacao nome = {nome}/>
+      
+      <div>
+        <h1>react-router-dom</h1>
+          <Router>
+            <NavBar/>
+            <Routes>
+              <Route  exact path="/" element={<Home />} > 
+              </Route>
+              <Route path="/empresa" element={<Empresa />} > 
+              </Route>
+              <Route path="/Contato" element={<Contato />} > 
+              </Route>
+            </Routes>
+          </Router>
+      </div>
     </div>
   )
 }
